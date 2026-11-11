@@ -1,7 +1,44 @@
 @import "tailwindcss";
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@theme {
+  /* gruvbox palette */
+  --color-gruv-bg-hard: #1d2021;
+  --color-gruv-bg-soft: #282828;
+  --color-gruv-bg-card: #32302f;
+
+  --color-gruv-fg-main: #ddc7a1;
+  --color-gruv-fg-muted: #a89984;
+  --color-gruv-fg-dim: #928374;
+
+  --color-gruv-red: #ea6962;
+  --color-gruv-orange: #e78a4e;
+  --color-gruv-yellow: #d8a657;
+  --color-gruv-green: #a9b665;
+  --color-gruv-aqua: #89b482;
+  --color-gruv-blue: #7daea3;
+  --color-gruv-purple: #d3869b;
+
+  /* semantic color variables */
+  --color-surface-hard: var(--color-gruv-bg-hard);
+  --color-surface-soft: var(--color-gruv-bg-soft);
+  --color-surface-card: var(--color-gruv-bg-card);
+
+  --color-foreground: var(--color-gruv-fg-main);
+  --color-muted: var(--color-gruv-fg-muted);
+  --color-dim: var(--color-gruv-fg-dim);
+
+  --color-primary: var(--color-gruv-aqua);
+  --color-primary-hover: var(--color-gruv-green);
+
+  --color-secondary: var(--color-gruv-orange);
+  --color-secondary-hover: var(--color-gruv-red);
+
+  --color-accent: var(--color-gruv-yellow);
+
+  --color-success: var(--color-gruv-green);
+  --color-error: var(--color-gruv-red);
+}
+
+@theme inline {
+  --font-sans: var(--font-fira-sans);
 }
